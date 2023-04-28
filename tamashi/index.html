@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ჟრუანტელი</title>
+        <title>ჟრუანტელის კლიკერი</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="fotoebi/xeli.jpg">
         <link rel="stylesheet" href="fotoebi/cold.jpg">
         <link rel="stylesheet" href="fotoebi/viri.jpg">
         <link rel="stylesheet" href="fotoebi/tyemali.jpg">
+        <link rel="stylesheet" href="fotoebi/ajika.jpg">
+        <link rel="stylesheet" href="fotoebi/texture/gadzlierebis_veli.png">
+        <link rel="stylesheet" href="fotoebi/texture/ujra.png">
+        <link rel="stylesheet" href="fotoebi/texture/knopka.png">
+        <link rel="stylesheet" href="fotoebi/texture/bonusebi.png">
+        <link rel="stylesheet" href="fotoebi/texture/kankala.gif">
+
         <link rel="stylesheet" href="fontebi/3d_unicode.ttf">
-        <link rel="icon" href="fotoebi/jruanteli2.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="xmebi/gadzliereba.wav">
+        <link rel="stylesheet" href="xmebi/kankali.mp3">
+        <link rel="stylesheet" href="xmebi/tyemlis_kbecha.wav">
+        <link rel="stylesheet" href="xmebi/ajika.mp3">
+        
+        <link rel="icon" href="fotoebi/logotipi.png" type="image/x-icon">
         
     </head>
     <body>
         <header>
             <div class="tavi">
+                <img src="fotoebi/logotipi.png" alt="logo">
                 <h1 class="satauri">ჟრუანტელის კლიკერი</h1>
             </div>
         </header>
+
+        <div id="mtavari">
+
+            <div id="klikis_adgili">
+                <p>ჟრუანტელ ქულა: <span id="qula">0</span> </p>
+                <p>კლიკის ქულა: <span id="qulab">0</span></p>
+                <button id="damateba" onclick="damateba(), ferebi()"></button>
+                <h1>დააჭირე ხელს!</h1>
+            </div>
+        </div>
+        <script src="js.js"></script>
+
+
+
 
         <div class="marcxena">
             <div class="gamyofi1"></div>
             <div class="ujra">
                 <img class="ujra_foto" src="fotoebi/xeli.jpg" alt="xeli">
                 <p class="teqsti">ჟრუანტელის გაძლიერება კლიკზე</p>
-                <div class="knopka"><button style="width: 60px; height: 50px; border-radius: 15px; margin-left: 1px;" id="knopka1" onclick="momateba(), ferebi()"><span id="fasi1">10</span></button></div>
+                <div class="knopka"><button style="width: 60px; height: 50px; border-radius: 15px; margin-left: 1px;" id="knopka1;" onclick="momateba(), ferebi()"><span id="fasi1">10</span></button></div>
             </div>
                 <div class="gamyofi"></div>
                 
@@ -42,17 +70,44 @@
             </div>  
             <div class="gamyofi"></div>
 
+            <div id="u1">
+                <div class="ujra">
+                    <img class="ujra_foto" src="fotoebi/ajika.jpg" alt="bovshi">
+                    <p class="teqsti">აჯიკა</p>
+                    <div class="knopka"><button style="width: 60px; height: 50px; border-radius: 15px; margin-left: 1px;" id="knopka4" onclick="ajika_yidva(), ferebi()"><span id="fasi4">300</span></button> </div>  
+                </div>  
+                <div class="gamyofi"></div>
+            </div>
+            
         </div>
         
 
-        <div class="mtavari">
-            <div class="adgili">
-                <p>ქულა: <span id="qula">0</span> </p>
-                <button id="damateba" onclick="damateba(), ferebi()"></button>
-                <h1>დააჭირე ხელს!</h1>
+        
+
+        <div id="bonusebi">
+
+
+            <div id="a1">
+                <div class="gamyofi1"></div>
+            <div class="ujra">
+                <p class="teqsti">-------აქ ყიდულობ კლიკის ქულით---</p>
             </div>
+            </div>
+            
+
+
+
+            <div id="b1">
+                <div class="gamyofi1"></div>
+            <div class="ujra">
+                <img class="ujra_foto" src="fotoebi/xeli.jpg" alt="xeli">
+                <p class="teqsti">კლიკის გაორმაგება</p>
+                <div class="knopka"><button style="width: 60px; height: 50px; border-radius: 15px; margin-left: 1px;" id="knopkab1" onclick="bonus1()"><span id="fasib1">600</span></button></div>
+            </div>
+            </div>
+
+            
         </div>
-        <script src="js.js"></script>
 
     </body>
 </html>
