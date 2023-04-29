@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ჟრუანტელის კლიკერი</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fotoebi/xeli.jpg">
+        <link rel="stylesheet" href="fotoebi/cold.jpg">
+        <link rel="stylesheet" href="fotoebi/tyemali.jpg">
+        <link rel="stylesheet" href="fotoebi/ajika.jpg">
+        <link rel="stylesheet" href="fotoebi/texture/gadzlierebis_veli.png">
+        <link rel="stylesheet" href="fotoebi/texture/ujra.png">
+        <link rel="stylesheet" href="fotoebi/texture/knopka.png">
+        <link rel="stylesheet" href="fotoebi/texture/bonusebi.png">
+        <link rel="stylesheet" href="fotoebi/texture/kankala.gif">
+        <link rel="stylesheet" href="fotoebi/cecxliani.jpg">
+        <link rel="stylesheet" href="fotoebi/information.png">
+        <link rel="stylesheet" href="fotoebi/texture/tavi.gif">
+
+        <link rel="stylesheet" href="fontebi/3d_unicode.ttf">
+
+        <link rel="stylesheet" href="xmebi/gadzliereba.wav">
+        <link rel="stylesheet" href="xmebi/kankali.mp3">
+        <link rel="stylesheet" href="xmebi/tyemlis_kbecha.wav">
+        <link rel="stylesheet" href="xmebi/ajika.mp3">
+        
+        <link rel="icon" href="fotoebi/logotipi.png" type="image/x-icon">
+        <script src="js.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <div class="tavi">
+                <img src="fotoebi/logotipi.png" alt="logo">
+                <h1 class="satauri">ჟრუანტელის კლიკერი</h1>
+            </div>
+        </header>
+
+
+
+
+        <div class="agricxva">
+            <div id="ag_kliki"><p><p class="ag_saxeli">კლიკი: </p><span id="ag_kliki_p">1</span></p> </div>
+            <div id="ag_sicive"><p><p class="ag_saxeli">სიცივე: </p><span id="ag_sicive_p">0</span></p></div>
+            <div id="ag_tyemali"><p><p class="ag_saxeli">ტყემალი: </p><span id="ag_tyemali_p">0</span></p></div>
+            <div id="ag_ajika"><p><p class="ag_saxeli">აჯიკა: </p><span id="ag_ajika_p">0</span></p></div>
+               
+        </div>
+
+        
+
+
+        <div class="mtavari_flex">
+
+            <div class="marcxena">
+                
+                <div class="gamyofi1"></div>
+                <div class="ujra">
+                    <img class="ujra_foto" src="fotoebi/xeli.jpg" alt="xeli">
+                    <p class="teqsti">ჟრუანტელის გაძლიერება კლიკზე</p>
+                        <div class="knopka"><button style="width: 60px; height: 50px; border-radius: 15px; margin-left: 1px;" id="knopka1;" onclick="momateba(),vibracia()"><span id="fasi1">10</span></button></div>    
+                    </div>
+                <div class="gamyofi"></div>
+                    
+                <div class="ujra">
+                    <img class="ujra_foto" src="fotoebi/cold.jpg" alt="bovshi">
+                    <p class="teqsti">სიცივის დამატება</p>
+                    <div class="knopka"><button style="width: 60px; height: 50px; border-radius: 15px; margin-left: 1px;" id="knopka2" onclick="sicive_yidva()"><span id="fasi2">10</span></button> </div>  
+                </div>  
+                <div class="gamyofi"></div>
+                
+    
+                <div class="ujra">
+                    <img class="ujra_foto" src="fotoebi/tyemali.jpg" alt="tyemali">
+                    <p class="teqsti">ტყემალი</p>
+                    <div class="knopka"><button style="width: 60px; height: 50px; border-radius: 15px; margin-left: 1px;" id="knopka3" onclick="tyemali_yidva()"><span id="fasi3">100</span></button> </div>  
+                </div>  
+                <div class="gamyofi"></div>
+    
+                <div id="u1">
+                    <div class="ujrau">
+                        <img class="ujra_foto" src="fotoebi/ajika.jpg" alt="ajika">
+                        <p class="teqsti">აჯიკა</p>
+                        <div class="knopka"><button style="width: 60px; height: 50px;border-radius: 15px; margin-left: 1px;" id="knopka4" onclick="ajika_yidva()"><span id="fasi4">300</span></button> </div>  
+                    </div>  
+                </div>
+                <div class="gamyofi"></div>
+
+
+            </div>
+            
+
+
+            <div id="mtavari">
+                <div id="klikis_adgili">
+                    <p>ჟრუანტელ ქულა: <span id="qula">0</span> </p>
+                    <div class="info_box">
+                        <img class="info_foto" src="fotoebi/information.png" alt="informacia">
+                        <span class="info_txt">ეს ქულები გემატება მხოლოდ და მხოლოდ კლიკისას</span>
+                        <p> კლიკის ქულა: <span id="qulab">0</span></p>
+                    </div>
+                    
+                    <button id="damateba" onclick="damateba(), vibracia()"></button>
+                    <h1>დააჭირე ხელს!</h1>
+                </div>
+            </div>
+             
+    
+            <div id="bonusebi">
+    
+    
+                <div id="a1">
+                    <div class="gamyofi1"></div>
+                <div class="ujrau1">
+                    <p class="teqsti">-------აქ ყიდულობ კლიკის ქულით---</p>
+                </div>
+                </div>
+                <div class="gamyofi1"></div>
+    
+    
+    
+                <div id="b1">
+                        <div class="gamyofi1"></div>
+                    <div class="ujrau">
+                        <img class="ujra_foto" src="fotoebi/cecxliani.jpg" alt="xeli">
+                        <p class="teqsti">კლიკის გაორმაგება</p>
+                        <div class="knopka"><button style="width: 60px; height: 50px; border-radius: 15px; margin-left: 1px;" id="knopkab1" onclick="bonus1()"><span id="fasib1">600</span></button></div>
+                    </div>
+                </div>
+    
+                
+            </div>
+        </div>
+       
+
+        
+
+    </body>
+</html>
