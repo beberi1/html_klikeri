@@ -50,6 +50,7 @@ var iumorina_xma = new Audio('xmebi/iumorina.mp3');
 
 
 
+
 function xebis_1(x) {
   x_ebi = x;
   if (x == 1){
@@ -108,11 +109,12 @@ function momateba()
         document.getElementById('ag_kliki_p').innerHTML = momatebuli;
         const ag_kliki = document.getElementById("ag_kliki");
         ag_kliki.style.display = "inline";
+        gadzliereba.play();
     }
   }
   document.getElementById('fasi1').innerHTML = (fasi1 + (fasi1 + x_ebi * (x_ebi - 1))*x_ebi) / 2;
   xebi(x_ebi);
-  gadzliereba.play();
+  
 }
 
 function sicive_yidva()
@@ -127,10 +129,11 @@ function sicive_yidva()
       document.getElementById('ag_sicive_p').innerHTML = sicives_kliki;
       const ag_sicive = document.getElementById("ag_sicive");
       ag_sicive.style.display = "inline";
+      sicive_xma.play();
   }
   }
   xebi(x_ebi);
-  sicive_xma.play();
+  
 }
 
 function tyemali_yidva() {
@@ -144,10 +147,11 @@ function tyemali_yidva() {
       document.getElementById('ag_tyemali_p').innerHTML = tyemali;
       const ag_tyemali = document.getElementById("ag_tyemali");
       ag_tyemali.style.display = "inline";
+      tyemlis_xma.play(); 
   }
   }
   xebi(x_ebi);
-  tyemlis_xma.play(); 
+  
 }
 
 function ajika_yidva() {
@@ -161,11 +165,12 @@ function ajika_yidva() {
       document.getElementById('ag_ajika_p').innerHTML = ajika;
       const ag_ajika = document.getElementById("ag_ajika");
       ag_ajika.style.display = "inline";
+      ajika_xma.play();
       
   }
   }
   xebi(x_ebi);
-  ajika_xma.play();
+  
 }
 
 function adeqit_yidva() {
@@ -179,10 +184,11 @@ function adeqit_yidva() {
       document.getElementById('ag_adeqit_p').innerHTML = adeqit;
       const ag_adeqit = document.getElementById("ag_adeqit");
       ag_adeqit.style.display = "inline";
+      gvritebo_xma.play();
     }
   }
   xebi(x_ebi);
-  gvritebo_xma.play();
+  
 }
 
 function titu_yidva() {
@@ -196,10 +202,11 @@ function titu_yidva() {
       document.getElementById('ag_titu_p').innerHTML = titu;
       const ag_titu = document.getElementById("ag_titu");
       ag_titu.style.display = "inline";
+      titu_xma.play(); 
   }
   }
   xebi(x_ebi);
-  titu_xma.play(); 
+  
 }
 
 function iumorina_yidva() {
@@ -213,10 +220,11 @@ function iumorina_yidva() {
       document.getElementById('ag_iumorina_p').innerHTML = iumorina;
       const ag_iumorina = document.getElementById("ag_iumorina");
       ag_iumorina.style.display = "inline";
+      iumorina_xma.play(); 
   }
   }
   xebi(x_ebi);
-  iumorina_xma.play(); 
+  
 }
 
 // function ferebi() {
@@ -256,7 +264,8 @@ function vibracia() {
 }
 
 function siaxleebi() {
-
+  // bg.play();
+  // bg.volume = 0.1;
   //bonusebi
   if (ricxvib >= 500){
     //klikis
@@ -359,11 +368,13 @@ function bonus1(){
 }
 
 function bonus2(){
+  //tyemlis xe
   if ( ricxvib >= 1000){
     fasi3 = fasi3 / 2;
     ricxvib = ricxvib - 1000;
     const b1 = document.getElementById('b2');
     b1.style.display = "none";
+    document.getElementById('b2_gamyofi').style.display = "none";
     document.getElementById('qulab').innerHTML = ricxvib;
     xebi(x_ebi);
   }
@@ -381,8 +392,9 @@ function bonus3(){
     document.getElementById('qulab').innerHTML = ricxvib;
     document.getElementById('ag_titu_p').innerHTML = titu;
     xebi(x_ebi);
+    sadac_ara_sjobs.play();
   }
-  sadac_ara_sjobs.play();
+  
 }
 
 function bonus4(){
@@ -413,8 +425,9 @@ function bonus5(){
     document.getElementById('qulab').innerHTML = ricxvib;
     document.getElementById('ag_ajika_p').innerHTML = ajika;
     xebi(x_ebi);
+    ajika_xma.play();
   }
-  ajika_xma.play();
+  
 }
 
 function bonus6(){
@@ -428,8 +441,9 @@ function bonus6(){
     document.getElementById('qulab').innerHTML = ricxvib;
     document.getElementById('ag_adeqit_p').innerHTML = adeqit;
     xebi(x_ebi);
+    rom_shemisrulda.play();
   }
-  rom_shemisrulda.play();
+  
 }
 
 

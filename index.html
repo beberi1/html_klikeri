@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <title>ჟრუანტელის კლიკერი</title>
+
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="fotoebi/xeli.jpg">
         <link rel="stylesheet" href="fotoebi/cold.jpg">
@@ -23,6 +25,10 @@
         <link rel="stylesheet" href="fotoebi/ajika1.jpg">
         <link rel="stylesheet" href="fotoebi/akrobatika.JPG">
         <link rel="stylesheet" href="fotoebi/iumorina.jpeg">
+        <link rel="stylesheet" href="fotoebi/texture/bg.png">
+        <link rel="stylesheet" href="fotoebi/texture/bg_p.png">
+        <link rel="stylesheet" href="fotoebi/xma_chartuli.svg">
+        <link rel="stylesheet" href="fotoebi/xma_gamortuli.svg">
 
         <link rel="stylesheet" href="fontebi/3d_unicode.ttf">
 
@@ -37,16 +43,30 @@
         <link rel="stylesheet" href="xmebi/rom_shemisrulda.mp3">
         <link rel="stylesheet" href="xmebi/rom_shemisrulda.mp3">
         <link rel="stylesheet" href="xmebi/iumorina.mp3">
+        <link rel="stylesheet" href="xmebi/bg_music.mp3">
+
+
+    </head>
         
         <link rel="icon" href="fotoebi/logotipi.png" type="image/x-icon">
-        <script src="js.js"></script>
-    </head>
     <body>
         
+
+
+        <div id="chasatvirti_ekrani">
+            <div class="chasatvirti_ekrani_box">
+                <h1>ორი წამი იტვირთება ძამა</h1>
+                <div class="chasatvirti_ekrani_wreebi"></div>
+            </div>
+        </div>
+
+
+
         <header>
             <div class="tavi">
                 <img src="fotoebi/logotipi.png" alt="logo">
                 <h1 class="satauri">ჟრუანტელის კლიკერი</h1>
+                <button id="xmis_chartva_gamortvaa" onclick="xma_gamortva_an()"></button>
             </div>
         </header>
 
@@ -71,12 +91,21 @@
 
             <div class="marcxena">
                 
-                <div class="ramdeni">
-                    <div class="xebi_gamochena_div"><span id="xebi_x">1</span></div>
-                    <button class="xebi" onclick="xebis_1(1),xebi(1)"><span id="x1">1</span></button>
-                    <button class="xebi" onclick="xebis_1(10),xebi(10)"><span id="x10">10</span></button>
-                    <button class="xebi" onclick="xebis_1(100),xebi(100)"><span id="x100">100</span></button>
+                
+                <div>
+                    <div class="x_ebi_satauri">
+                        <h5>აირჩიე რამდენი გაძლიერების შეძენა გინდა </h5>
+                        <h5>ერთდროულად</h5>
+                    </div>
+                    
+                    <div class="ramdeni_xebi">
+                        <div class="xebi_gamochena_div"><span id="xebi_x">1</span></div>
+                        <button class="xebi" onclick="xebis_1(1),xebi(1)"><span id="x1">1</span></button>
+                        <button class="xebi" onclick="xebis_1(10),xebi(10)"><span id="x10">10</span></button>
+                        <button class="xebi" onclick="xebis_1(100),xebi(100)"><span id="x100">100</span></button>
+                    </div>
                 </div>
+                
 
                 <div class="ujra">
                     <img class="ujra_foto" src="fotoebi/xeli.jpg" alt="xeli">
@@ -140,7 +169,6 @@
             </div>
             
 
-
             <div id="mtavari">
                 <div id="klikis_adgili">
                     <p>ჟრუანტელ ქულა: <span id="qula">0</span> </p>
@@ -172,12 +200,12 @@
                 <div id="b1">
                     <div class="ujrau">
                         <img class="ujra_foto" src="fotoebi/cecxliani.jpg" alt="xeli">
-                        <p class="teqsti">კლიკის გაორმაგება</p>
+                        <p class="teqsti"> ჟრუანტელის კლიკის გაორმაგება</p>
                         <div class="knopka"><button style="width: 60px; height: 50px; border-radius: 15px; margin-left: 1px;" id="knopkab1" onclick="bonus1()"><span id="fasib1">600</span></button></div>
                     </div>
                 </div>
 
-                <div class="gamyofi1"></div>
+                <div class="gamyofi1" id="b2_gamyofi"></div>
                 <div id="b2"> 
                 <div class="ujrau">
                     <img class="ujra_foto" src="fotoebi/tyemlis_xe.jpg" alt="xeli">
@@ -230,7 +258,7 @@
         </div>
        
 
-        
-
+        <script src="bg_music.js"></script>
+        <script src="js.js"></script>
     </body>
 </html>
